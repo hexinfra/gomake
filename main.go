@@ -39,8 +39,8 @@ TARGET
   Some special TARGETs are:
 
   all      # build all cmds in the directory
-  clean    # clean bins, logs, and temp files
-  clear    # clear bins, logs, temp, and vars files
+  clean    # clean bins, logs, and tmps files
+  clear    # clear bins, logs, tmps, and vars files
   dist     # make distribution
 `
 
@@ -163,7 +163,7 @@ func build(name string) {
 func reset(withVars bool) {
 	names := []string{
 		"logs",
-		"temp",
+		"tmps",
 	}
 	if withVars {
 		names = append(names, "vars")
